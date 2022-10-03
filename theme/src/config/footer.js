@@ -26,15 +26,15 @@ export const footerLists = [
 		title: 'Landing Pages',
 		items: [
 			{
-				title: 'Landing Page 1',
+				title: ' ',
 				slug: '/landing-pages/landing-1',
 			},
 			{
-				title: 'Landing Page 2',
+				title: ' ',
 				slug: '/landing-pages/landing-2',
 			},
       		{
-				title: 'Landing Page 3',
+				title: ' ',
 				slug: '/landing-pages/landing-3',
 				},
 		],
@@ -48,7 +48,7 @@ export const footerLists = [
 			},
 			{
 				title: 'Events',
-				slug: '/blog',
+				slug: '#/blog',
 			},
 			{
 				title: 'Contact',

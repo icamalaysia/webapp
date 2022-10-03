@@ -5,7 +5,7 @@ export const nav = [
 	},
 	{
 		title: 'Events',
-		slug: '/blog',
+		slug: '#/blog',
 	},
 	{
 		title: 'About',
