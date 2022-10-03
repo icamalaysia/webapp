@@ -22,7 +22,9 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
-            
+				</div>
+        {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
+		</div>
 		<div class="hero-section__image">
 				<picture>
 					<img
