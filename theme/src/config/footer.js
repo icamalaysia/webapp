@@ -33,10 +33,10 @@ export const footerLists = [
 				title: 'Landing Page 2',
 				slug: '/landing-pages/landing-2',
 			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
+      		{
+				title: 'Landing Page 3',
+				slug: '/landing-pages/landing-3',
+				},
 		],
 	},
 	{
