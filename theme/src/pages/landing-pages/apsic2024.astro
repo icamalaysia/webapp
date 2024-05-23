@@ -1,48 +1,34 @@
+---
 import { Icon } from 'astro-icon';
-import {
-  AnnouncementBar,
-  Button,
-  CustomerQuoteSection,
-  ThreeColumnTextSection,
-  YouTubeEmbedSection,
-  StickyTextImageSection,
-  CtaCardSection,
-} from '@littlesticks/odyssey-theme-components';
+import { AnnouncementBar, Button, CustomerQuoteSection, ThreeColumnTextSection, YouTubeEmbedSection, StickyTextImageSection, CtaCardSection } from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
 import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
-import Container from '../../components/Container.astro'; // Make sure to import Container
+import Container from '../../components/Container.astro';
 
 const seo = {
   title: 'ICAMalaysia',
   description: '23rd APSIC THE FUTURE OF INFECTION CONTROL 2024',
 };
-
 ---
 
 <Layout seo={seo}>
-	<TextAndImageHero reversed>
-	<div slot="text-container">
-		<h1>23rd APSIC THE FUTURE OF INFECTION CONTROL 2024</h1>
-		<p></p>
-	</div>
-	<div slot="btns-container">
-		<Button href="https://pdfupload.io/docs/b6f0b290" customIcon>
-		Program Details
-		<Icon name="ic:baseline-chevron-right" slot="icon" />
-		</Button>
-		<Button href="https://form.jotform.com/241428662188463" customIcon>
-		Register Now
-		<Icon name="ic:baseline-chevron-right" slot="icon" />
-		</Button>
-	</div>
-	<picture slot="image-container">
-		<img
-		src="https://i.ibb.co/z49cpHx/image.png"
-		alt="apsic2023_thumb"
-		id="home-hero-image"
-		/>
-	</picture>
-	</TextAndImageHero>
+  <TextAndImageHero reversed>
+    <div slot="text-container">
+      <h1>23rd APSIC THE FUTURE OF INFECTION CONTROL 2024</h1>
+      <p></p>
+    </div>
+    <div slot="btns-container">
+      <Button href="https://pdfupload.io/docs/b6f0b290" customIcon>
+        Program Details <Icon name="ic:baseline-chevron-right" slot="icon" />
+      </Button>
+      <Button href="https://form.jotform.com/241428662188463" customIcon>
+        Register Now <Icon name="ic:baseline-chevron-right" slot="icon" />
+      </Button>
+    </div>
+    <picture slot="image-container">
+      <img src="https://i.ibb.co/z49cpHx/image.png" alt="apsic2023_thumb" id="home-hero-image" />
+    </picture>
+  </TextAndImageHero>
 
   <Container style="width: 100%;">
     <section style="text-align: center;">
@@ -59,8 +45,7 @@ const seo = {
     <h2>Register Today</h2>
     <p>It only takes a couple clicks to download and sign for your registration.</p>
     <Button href="https://form.jotform.com/241428662188463" customIcon>
-      Register Now
-      <Icon name="ic:baseline-chevron-right" slot="icon" />
+      Register Now <Icon name="ic:baseline-chevron-right" slot="icon" />
     </Button>
   </CtaCardSection>
 </Layout>
