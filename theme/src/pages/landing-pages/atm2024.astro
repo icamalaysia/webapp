@@ -1,0 +1,60 @@
+---
+import { Icon } from 'astro-icon';
+import {
+  AnnouncementBar,
+  Button,
+  CustomerQuoteSection,
+  ThreeColumnTextSection,
+  YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+  title: 'British Infection Association - Autumn Trainee Meeting 2024',
+  description: 'Autumn Trainee Meeting 2024 (3rd October, Sheffield)',
+};
+---
+
+<Layout seo={seo}>
+  <TextAndImageHero reversed>
+    <div slot="text-container">
+      <h1>British Infection Association - Autumn Trainee Meeting 2024</h1>
+      <p> </p>
+    </div>
+    <div slot="btns-container">
+      <Button href="https://fitwise.eventsair.com/biaautumn2024/" >More Details</Button>
+    </div>
+    <picture slot="image-container">
+      <img
+        src="https://i.ibb.co/z49cpHx/image.png"
+        alt="apsic2023_thumb"
+        class="hero-image"
+      />
+    </picture>
+  </TextAndImageHero>
+
+  <div class="image-grid">
+    <img
+      src="https://i.ibb.co/3W6f7Z2/image.png"
+      alt="23APSIC_thumb3"
+      class="thumb-image"
+    /></div>
+</Layout>
+
+<style>
+  .image-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .thumb-image {
+    margin: 0 10px;
+  }
+
+  .hero-image {
+    /* Add any necessary styling for the hero image */
+  }
+</style>
