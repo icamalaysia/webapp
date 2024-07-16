@@ -1,0 +1,72 @@
+---
+import { Icon } from 'astro-icon';
+import {
+  AnnouncementBar,
+  Button,
+  CustomerQuoteSection,
+  ThreeColumnTextSection,
+  YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+  title: 'ICAMalaysia | 11th INTERNATIONAL CONGRESS',
+  description: '11th INTERNATIONAL CONGRESS OF ASIA PACIFIC SOCIETY OF INFECTION CONTROL (APSIC) 2024',
+};
+---
+
+<Layout seo={seo}>
+  <TextAndImageHero reversed>
+    <div slot="text-container">
+      <h1>11th INTERNATIONAL CONGRESS OF ASIA PACIFIC SOCIETY OF INFECTION CONTROL (APSIC) 2024</h1>
+      <p> </p>
+    </div>
+    <div slot="btns-container">
+      <Button href="https://apsic2024.com/" >Register Now</Button>
+    </div>
+    <picture slot="image-container">
+      <img
+        src="https://i.ibb.co/JKNLrzH/image.png"
+        alt="apsic2023_thumb"
+        class="hero-image"
+      />
+    </picture>
+  </TextAndImageHero>
+
+  <div class="image-grid">
+    <img
+      src="https://i.ibb.co/5jVXsBd/image.png"
+      alt="23APSIC_thumb1"
+      class="thumb-image"
+    /><br></div>
+  <div class="image-grid">
+    <img
+      src="https://i.ibb.co/5KKfw1C/image.png"
+      alt="23APSIC_thumb2"
+      class="thumb-image"
+    /><br></div>
+    <div class="image-grid">
+    <img
+      src="https://i.ibb.co/8sxBDVP/image.png"
+      alt="23APSIC_thumb3"
+      class="thumb-image"
+    /></div>
+</Layout>
+
+<style>
+  .image-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .thumb-image {
+    margin: 0 10px;
+  }
+
+  .hero-image {
+    /* Add any necessary styling for the hero image */
+  }
+</style>
